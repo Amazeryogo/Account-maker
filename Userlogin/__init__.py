@@ -27,9 +27,9 @@ def login():
     elif user in Thelist:
         print('welcome! Please enter your password:')
         passwor = input(":")
-        if passwor in Password:
+        if Password[passwor] in Password:
             print('Welcome!' + user)
-            # join here!
+            # join  your service here!
         else:
             print('Error! wrong password! try again!')
             login()
